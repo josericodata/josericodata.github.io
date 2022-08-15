@@ -1,0 +1,234 @@
+<!-- Autor: Jose Maria Rico Leal-->
+<!-- Project: Data Analyst Porfolio Web Design-->
+<!-- Date: 02/08/2022-->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Python cases to highlight the capabilities of this powerful tool">
+	<meta name="keywords" content="Portfolio, data, analyst, data analyst,business, intelligence, business intelligence, BI, storyteller,Power BI, MySQL, SQL, R, Python, Tableau,Alterix ,Dublin, Ireland, CV, job, job seeking">	
+	<meta name="og:title" property="og:title" content="Data Analyst porfolio">
+	<link rel="icon" href="../assets/img/favicon.png" type="image/png">
+	<title>Python | Jose Rico Data Analyst Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/vendors/linericon/style.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="../assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="../assets/vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="../assets/vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="../assets/vendors/flaticon/flaticon.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+	<!-- main css -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="../index.html">Start</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/sql.html">SQL</a></li>
+							<li class="nav-item active"><a class="nav-link" href="python.html">Python</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/r.html">R</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/powerbi.html">Power BI</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/otherprojects.html">Other Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/cv.html">CV</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================ Start portfolio Banner Area =================-->
+	<section class="banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-right">
+					<h1>Python</h1>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Portfolio Banner Area =================-->
+
+	<section class="section_gap portfolio_area" id="work">
+		<div class="container">
+				<div class="row justify-content-center">
+				
+					<div class="main-title">
+						<div class="col-lg-12">
+							<h1>Classic Models in Python</h1>
+							<h2>Background</h2>
+							<p>Goal: I will be using Python to recreate some queries that, some imaginary stakeholders may request.<br>Here we will learn
+							 how to connect a DB to python, and try few of the innumerable possibilities of this language.</p><br>
+							
+							<h2>Technology</h2>
+							<p>For this set of examples I am using Jupyter Notebook, from Anaconda Distribution.</p><br>
+							<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/anaconda.png" alt=""><br></br>
+									<img class="img-fluid" src="../assets/img/python/jupyter.png" alt=""><br></br>				
+								</div></br>
+								<h2>Dataset</h2>
+							<p>Nothing to do here, we will be using the dataset we have loaded into MySQL.</p>
+							<h1>Scenarios</h1>
+							<h2>Scenario 1:</h2>
+							<p>First we must try the connection between Python and MySQL. For that we need four libraries:<br> <i> "pandas"</i>,<i> "getpass"</i>,<i> "pymysql" </i>and<i> "sqlalchemy".</i>
+							I have faced an issue with <i>"mysql"</i> this <br>package was missing from Anaconda distribution, please see this <a href="https://stackoverflow.com/questions/64414751/conda-mysql-package-not-recognized-in-any-python-interpreter">link</a> it solved the problem.</p><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario1.png" alt=""><br></br>	
+								</div></br>
+							<h2>Scenario 2:</h2>
+							<p>Imagine now that we want print an Excel file for each of the tables:</p></br>				
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario2.png" alt=""><br></br>	
+									<p>Now you have each table extracted into an Excel file:</p><br>
+									<img class="img-fluid"  src="../assets/img/python/result1.png" alt=""></br>
+									
+								</div><br>
+							<h2>Scenario 3:</h2>
+							<p>Add columns from an Excel file to a data frame pulled from SQL. We will be adding office city and phone to employee info.<br>
+							For that we use a sort of <i>"Vlookup"</i> function, that uses a unique identifier <i>"officeCode"</i> to bring the new columns in.</p><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario3.png" alt=""><br></br>	
+										
+								</div><br>
+							<h2>Scenario 4:</h2>
+							<p>A Data Analyst spends most of the time cleaning datasets, dropping duplicates is a good example of it.<br>
+							As a data frame I will be using the Excel file containing all employees. I purposely triplicate the number of<br>
+							employees from 23 to 69, now we are going to see how to reverse to 23 unique employees.</p><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario4.png" alt=""><br></br>	
+									
+								</div><br>
+							<h2>Scenario 5:</h2>
+							<p>Mary our General Sales Manager, wants to know the count of orders excluding the two biggest accounts.<br>
+							Customer 124 and 141 have placed 17 and 26 orders respectively. The figure for Mary should be 283.</p><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario5.png" alt=""><br></br>	
+									
+								</div><br>
+							<h2>Scenario 6:</h2>
+							<p>Now from package <i>"Pandas"</i> we are going to use a vertical bar plot, data shown is taken from MySQL scenario 1.</br>
+							We will get an ordered visual by table based on row count.</p><br>
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario6.png" alt=""><br></br>	
+									
+								</div><br>
+							<h2>Scenario 7:</h2>
+							<p>Another great library for visualisations is <i>"matplotlib"</i>, now we want to create a plot for customers that exceed revenue in 130K.</p></br>				
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario7.png" alt=""><br></br>	
+									
+								</div><br>
+							<h2>Scenario 8:</h2>
+							<p>For this case we want to create a pie chart displaying each of the products by percentatge of revenue:</p></br>				
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario8.png" alt=""><br></br>	
+									
+								</div><br>
+								<h2>Scenario 9:</h2>
+							<p>Use a scatter chart representing sales rep by revenue:</p></br>				
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario9.png" alt=""><br>
+								</div><br>
+									<h2>Scenario 10:</h2>
+							<p>To wrap up the case scenarios we are going to see <i>"geopandas"</i> library, therefore we can demonstrate</br>
+							that in python you can manipulate maps. My colleague Oshimi is asking if we can turn Japan in green<br>
+							because his grandmother use to exhibit and old picture of a green Japan, apparenlty he truly believes <br>
+							that, this action can ramp up sales revenue in Asia, meanwhile we will work this out for Oshimi....</p><br>	
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/python/scenario10.png" alt=""><br>
+									
+								</div><br>
+							
+											<h2>Notes:</h2>
+									
+								<div class="col-lg-12">						
+									<p>This is just a tiny bit about what you can do in python.</p></br>	
+									
+									<p>In case you are interested in replicating some of the scenarios please find all jupyter notebooks:</br></p>
+											
+									<a href="#">Jupyter_Notebooks</a><br>
+								</div>
+						</div>		
+					</div>
+					
+				</div>
+			
+		</div>
+	</section>
+	<!--================ End Portfolio Area =================-->
+	<!--================ End Portfolio Area =================-->
+
+	<!--================ Start Footer Area =================-->
+	<footer class="footer_area section_gap">
+		<div class="container">
+			<div class="row footer_inner justify-content-center">
+				<div class="col-lg-6 text-center">
+					<aside class="f_widget social_widget">
+						<div class="f_logo">
+							<img src="../assets/img/logo.png" alt="">
+						</div>
+						<div class="f_title">
+							<h4>Contact Me</h4>
+						</div>
+						<ul class="list">
+							<li><a href="https://www.linkedin.com/in/josemariaricoleal/"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://www.strava.com/athletes/38180709"><i class='bi bi-strava'></i></a></li>
+						</ul>
+						
+					</aside>
+					<div class="copyright">
+						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Powered with&nbsp<i class="fa fa-heart" aria-hidden="true"></i>&nbsp by Jose Rico<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright &copy;<script>document.write(new Date().getFullYear());</script>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="../assets/js/jquery-3.2.1.min.js"></script>
+	<script src="../assets/js/popper.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/stellar.js"></script>
+	<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="../assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="../assets/vendors/isotope/isotope-min.js"></script>
+	<script src="../assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../assets/js/jquery.ajaxchimp.min.js"></script>
+	<script src="../assets/js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="../assets/js/gmaps.min.js"></script>
+	<script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

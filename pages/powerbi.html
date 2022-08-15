@@ -1,0 +1,301 @@
+<!-- Autor: Jose Maria Rico Leal-->
+<!-- Project: Data Analyst Porfolio Web Design-->
+<!-- Date: 02/08/2022-->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Power BI scenarios to practice with this powerful resource">
+	<meta name="keywords" content="Portfolio, data, analyst, data analyst,business, intelligence, business intelligence, BI, storyteller,Power BI, MySQL, SQL, R, Python, Tableau,Alterix ,Dublin, Ireland, CV, job, job seeking">	
+	<meta name="og:title" property="og:title" content="Data Analyst porfolio">
+	<link rel="icon" href="../assets/img/favicon.png" type="image/png">
+	<title>PowerBi | Jose Rico Data Analyst Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/vendors/linericon/style.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="../assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="../assets/vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="../assets/vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="../assets/vendors/flaticon/flaticon.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+	<!-- main css -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="../index.html">Start</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/sql.html">SQL</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/python.html">Python</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/r.html">R</a></li>
+							<li class="nav-item active"><a class="nav-link" href="powerbi.html">Power BI</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/otherprojects.html">Other Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/cv.html">CV</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================ Start portfolio Banner Area =================-->
+	<section class="banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-right">
+					<h1>Power BI</h1>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Portfolio Banner Area =================-->
+
+	<!--================ Start Portfolio Area =================-->
+	<section class="section_gap portfolio_area" id="work">
+		<div class="container">
+				<div class="row justify-content-center">
+				
+					<div class="main-title">
+						<div class="col-lg-12">	
+							<h1>Classic Models in Power BI</h1>
+							<h2>Background</h2>
+							<p>Purpose: In this page we are going to create several dashboards for <i>"Classic Models"</i><br> that will help to set KPI's to track performance within our teams.</p><br>
+							
+							<h2>Technology</h2>
+							<p>We will be taking advantage of Power BI Desktop, this tool gives you a bunch of visuals<br> to represent your data.</p><br><br>
+							<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/powerbi/logo.jpg" alt=""><br>	
+								</div></br>
+								<h2>Dataset</h2>
+							<p>Same data used in previous pages, <strong> Classic Models</strong>  dataset loaded into MySQL, will be used.</p><br><br>
+								<h2>Preliminary</h2>
+							<p>Before starting the scenarios it is worth to look at the model diagram:</p><br><br>
+							<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/powerbi/model.png" alt=""><br></br>	
+							</div></br>
+							<p>Followed by all queries I have imported from MySQL:</p><br><br>
+							<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/powerbi/queries.png" alt=""><br></br>	
+							</div>
+							<p>Now we can kick off the case scenarios.</p><br>
+							<h1>Scenarios</h1>
+							<h2>Scenario 1:</h2>
+							<p>The purchasing department who is reponsible for ensuring that our company mantain a correct level of<br> inventory,
+							is asking if it is possible to have a breakdown of the following items:</p>
+							<div class="row justify-content-center" id="ulli">	
+								<ul>
+									
+									<li>Funnel of quantity in stock by product line.</li>
+									<li>Vertical column chart by product name showing current stock quantity.</li>
+									<li>Stock rotation card, this is calculated from quantity sold.</li>
+									
+								</ul>
+							</div>
+							<p>Finance team is also interested in having visibility over inventory revenue,and they are asking if it is</br>
+							possible to achieve the following requirements:</p>
+							<div class="row justify-content-center" id="ulli">	
+								<ul>
+									
+									<li>Horizontal column chart reflecting inventory value by product name.</li>
+									<li>Inventory value card, this is calculated multiplying stock quantity by buy price.</li>
+									<li>Market value card, this is calculated multiplying stock quantity by MSRP.</li>
+									
+								</ul>
+							
+							</div>
+							<p>Both teams have agreed on having slicers by product line, code and name. Please see below screenshot of<br> visual Classic Models Inventory:</p><br><br>
+							
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/powerbi/scenario1.png" alt=""><br></br>
+								</div>
+							<p>Now we are going to interact with the dashboard, for that we set on slicer product line <i>"Planes"</i><br>
+							see how nicely features play out:</p><br><br>
+								<div class="col-lg-12">		
+									<img class="img-fluid"  src="../assets/img/powerbi/scenario1.1.png" alt=""></br>
+								</div><br>
+							<p>Another example to wrap up scenario 1, would be to select product name <i>"1969 Ford Falcon"</i>:<br></p>
+							<br><br>
+								<div class="col-lg-12">		
+									<img class="img-fluid"  src="../assets/img/powerbi/scenario1.2.png" alt=""></br>
+								</div><br>
+								
+							<h2>Scenario 2:</h2>
+							<p>Finance team reached out to us for creating a dashboard that fulfills the following requirements:<br></p>
+							<div class="row justify-content-center" id="ulli">	
+								<ul>
+									
+									<li>One slicer for the following categories, product line, product name and customer name.</li>
+									<li>A table sorted by order number containing customer name, product details and amount by order line.</li>
+									<li>A pie chart having total revenue by product line.</li>
+									<li>Horizontal column chart showing revenue by product.</li>
+									<li>Total revenue value card, total revenue since the company is operating.</li>
+									
+								</ul>
+							</div>
+							
+							<p>Note that in the table there is a column <i>"Concat"</i> result of concatenating order number plus order line<br> I had to came up with that solution to be able to sort by order number. Please see the result of this visual:</p><br><br>
+							
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/powerbi/scenario2.png" alt=""><br></br>
+								</div>
+							<p>Sales Team set slicer order number for order <i>"10129"</i>, they are quite happy with<br>
+							the level of detail this dashboard gives them:</p><br><br>
+							
+								<div class="col-lg-12">		
+									<img class="img-fluid"  src="../assets/img/powerbi/scenario2.1.png" alt=""></br>
+								</div><br>
+							<p>Product line <i>"Classic Cars"</i> has the highest revenue, we want to break it down to see which product<br> and order line has the highest value:</p>
+							<br><br>
+								<div class="col-lg-12">		
+									<img class="img-fluid"  src="../assets/img/powerbi/scenario2.2.png" alt=""></br>
+								</div><br>
+									<h2>Scenario 3:</h2>
+							<p>Our colleagues from sales suggested a dashboard with the following requirements:<br></p>
+							<div class="row justify-content-center" id="ulli">	
+								<ul>
+									
+									<li>One slicer for product line and another one for customer name.</li>
+									<li>A pie chart showing yearly number of orders.</li>
+									<li>A table containing products, quantity ordered and sorted by total revenue.</li>
+									<li>A table listing customers, country, sales rep and sorted by revenue.</li>
+									<li>Map locating each customer city by revenue.</li>
+									
+								</ul>
+							</div>
+							
+							<p>After considering above requirements we have created the following visual:</p><br><br>
+							
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/powerbi/scenario3.png" alt=""><br></br>
+								</div>
+							<p>To see this visual functioning in slicer customer name, we pick <i>"Euro+ Shopping Channel"</i>, I like how the map zooms in.<br>
+							The breakdown of orders by year all togheter with a ranking of product and quantity ordered by revenue, adds more insights:</p><br><br>
+							
+								<div class="col-lg-12">		
+									<img class="img-fluid"  src="../assets/img/powerbi/scenario3.1.png" alt=""></br>
+								</div><br>
+							<p>Product line <i>"Trains"</i> has the lowest revenue, and now we want to focus on it,<br> maybe this visual helps our sales to increase sales on <i>"Trains"</i>:</p>
+							<br><br>
+								<div class="col-lg-12">		
+									<img class="img-fluid"  src="../assets/img/powerbi/scenario3.2.png" alt=""></br>
+								</div><br>	
+									<h2>Scenario 4:</h2>
+							<p>For the last scenario sales team wants to have a dashboards with the following points:<br></p>
+							<div class="row justify-content-center" id="ulli">	
+								<ul>
+									<li>One slicer for each of the following items, region, rep name and product line.</li>
+									<li>A matrix ordered by revenue showing regions and markets assigned to each sales rep.</li>
+									<li>A table for customers and their countries sorted by revenue.</li>
+									<li>Funnel listing regions by revenue.</li>
+									<li>Horizontal column chart ranking sales rep by revenue generated..</li>
+									
+									
+								</ul>
+							</div>
+							
+							<p>After a bit of work the resulting dashboard looks like this:</p><br><br>
+							
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/powerbi/scenario4.png" alt=""><br></br>
+								</div>
+							<p>Diane Murphy the CEO wants to see how EMEA has perfomed since the company was established,<br> 
+							 for that we select on slicer region <i>"EMEA"</i> and gives us the following result:</p><br><br> 
+							
+								<div class="col-lg-12">		
+									<img class="img-fluid"  src="../assets/img/powerbi/scenario4.1.png" alt=""></br>
+								</div><br>
+							<p>Gerard Hernandez appears to be the top sales performer. To deep dive in his metrics<br> we select his name in slicer rep name, results shown below:</p>
+							<br><br>
+								<div class="col-lg-12">		
+									<img class="img-fluid"  src="../assets/img/powerbi/scenario4.2.png" alt=""></br>
+								</div><br>	
+											<h2>Notes:</h2>
+									
+								<div class="col-lg-12">						
+									<p>From all four technologies Power BI is so far the one I like and enjoy the most.</br>	
+									The visuals obtained can drive your teams in the right direction, by tracking<br>
+									performance using KPI's. Please find the .pbix file in this link: <a href="#">Power_BI_Scenarios.pbix</a>.</p>
+								</div>
+	
+						</div>
+					</div>
+					
+				</div>
+			
+		</div>
+	</section>
+	<!--================ End Portfolio Area =================-->
+
+	<!--================ Start Footer Area =================-->
+	<footer class="footer_area section_gap">
+		<div class="container">
+			<div class="row footer_inner justify-content-center">
+				<div class="col-lg-6 text-center">
+					<aside class="f_widget social_widget">
+						<div class="f_logo">
+							<img src="../assets/img/logo.png" alt="">
+						</div>
+						<div class="f_title">
+							<h4>Contact Me</h4>
+						</div>
+						<ul class="list">
+							<li><a href="https://www.linkedin.com/in/josemariaricoleal/"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://www.strava.com/athletes/38180709"><i class='bi bi-strava'></i></a></li>
+						</ul>
+						
+					</aside>
+					<div class="copyright">
+						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Powered with&nbsp<i class="fa fa-heart" aria-hidden="true"></i>&nbsp by Jose Rico<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright &copy;<script>document.write(new Date().getFullYear());</script>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="../assets/js/jquery-3.2.1.min.js"></script>
+	<script src="../assets/js/popper.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/stellar.js"></script>
+	<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="../assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="../assets/vendors/isotope/isotope-min.js"></script>
+	<script src="../assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../assets/js/jquery.ajaxchimp.min.js"></script>
+	<script src="../assets/js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="../assets/js/gmaps.min.js"></script>
+	<script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

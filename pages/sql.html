@@ -1,0 +1,293 @@
+<!-- Autor: Jose Maria Rico Leal-->
+<!-- Project: Data Analyst Porfolio Web Design-->
+<!-- Date: 02/08/2022-->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="SQL examples to see the importance of knowing this technology">
+	<meta name="keywords" content="Portfolio, data, analyst, data analyst,business, intelligence, business intelligence, BI, storyteller,Power BI, MySQL, SQL, R, Python, Tableau,Alterix ,Dublin, Ireland, CV, job, job seeking">	
+	<meta name="og:title" property="og:title" content="Data Analyst porfolio">
+	<link rel="icon" href="../assets/img/favicon.png" type="image/png">
+	<title>SQL | Jose Rico Data Analyst Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/vendors/linericon/style.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="../assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="../assets/vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="../assets/vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="../assets/vendors/flaticon/flaticon.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+	<!-- main css -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="../index.html">Start</a></li>
+							<li class="nav-item active"><a class="nav-link" href="sql.html">SQL</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/python.html">Python</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/r.html">R</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/powerbi.html">Power BI</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/otherprojects.html">Other Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/cv.html">CV</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================ Start portfolio Banner Area =================-->
+	<section class="banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-right">
+					<h1>SQL</h1>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Portfolio Banner Area =================-->
+
+	<!--================ Start Portfolio Area =================-->
+	<section class="section_gap portfolio_area" id="work">
+		<div class="container">
+				<div class="row justify-content-center">
+				
+					<div class="main-title">
+						<div class="col-lg-12">		
+							<h1>Classic Models SQL Database Queries</h1>
+							<h2>Background</h2>
+							<p>Aim: Use SQL as I would in my current company, to assist different stakeholders,<br> pointing out trends and offer insights to align with company goals.</p><br><br>
+							
+							<h2>Technology</h2>
+							<p>I will be using MySQL Workbench because once you learn it,<br>you can master any relational DB from any company worldwide.</p><br>
+							<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/mysql.png" alt=""><br></br>	
+								</div></br>
+								<h2>Dataset</h2>
+							<p>To get this DB up and running please click on the following link : <a href="https://www.mysqltutorial.org/mysql-sample-database.aspx">https://www.mysqltutorial.org/mysql-sample-database.aspx</a><br>
+							It is a small company that manufacures miniatures of classic and vintage cars, motorcycles, trucks and buses, planes and ships.<br>
+							It is a global company that sells worldwide, date records are from 2003 to 2005. Fictional company anyway :).</p><br><br>
+								<h2>Classic Models ER Diagram</h2>
+							<p>After creating the DB we have eight tables that look like this:</p>
+							
+							<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/diagram.png" alt=""><br></br>	
+							</div></br>
+							<h1>Scenarios</h1>
+							<h2>Scenario 1:</h2>
+							<p>First, get to know a bit the database, we are going to get all rows for each of the tables.</p></br><br>	
+						</div>	
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query.png" alt=""><br>
+									<div><br>
+									<p>Eight tables:<p/>
+									<div></br>
+									<img class="img-fluid"  src="../assets/img/sql/result.png" alt="">
+									
+								</div>
+								<p><i>Displaying records 1 - 8.</i></p><br><br>
+							<h2>Scenario 2:</h2>
+							<p>Top customers by revenue:</p></br><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query1.png" alt=""><br></br>	
+									<p>Great insights for our sales team, top customers by revenue, last order date.<br>Send promotions based on last order date and low sales customers.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result1.png" alt=""></br>
+									<p><i>Displaying records 1 - 38 from 98.</i></p><br>
+								</div><br>
+							<h2>Scenario 3:</h2>
+							<p>Top sales rep performer.</p></br><br>				
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query2.png" alt=""><br></br>	
+									<p>Now the sales manager can set up a bonus system.<br>Sales colleagues will be happy to be rewarded for all hard work.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result2.png" alt=""></br>
+									<p><i>Displaying records 1 - 15.</i></p><br>
+								</div><br>
+							<h2>Scenario 4:</h2>
+							<p>Which office is selling the most?</p></br><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query3.png" alt=""><br></br>	
+									<p>Paris is the best and Tokyo needs some attention.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result3.png" alt=""></br>	
+									<p><i>Displaying records 1 - 7.</i></p><br>
+								</div><br>
+							<h2>Scenario 5:</h2>
+							<p>The CEO is asking how to give discounts to customers:</p><br><br>				
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query4.png" alt=""><br></br>	
+									<p>Discounts will be offered to clients buying more than 35 units per year.<br>It will depend on sales volume obviously.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result4.png" alt=""></br>
+									<p><i>Displaying records 1 - 2.</i></p><br>
+								</div><br>
+							<h2>Scenario 6:</h2>
+							<p>Which month has the most total items ordered?:</p></br><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query5.png" alt=""><br></br>	
+									<p>Before Christmas our customers stock up the warehouse.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result5.png" alt=""></br>
+									<p><i>Displaying records 1 - 12.</i></p><br>
+								</div><br>
+							<h2>Scenario 7:</h2>
+							<p>Orders per year:</p></br><br>				
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query6.png" alt=""><br></br>	
+									<p>2004 was our year in terms of orders.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result6.png" alt=""></br>
+									<p><i>Displaying records 1 - 3.</i><p/><br>
+								</div><br>
+							<h2>Scenario 8:</h2>
+							<p>Orders per month since the company was opened:</p></br><br>		
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query7.png" alt=""><br></br>	
+									<p>November shows that our busiest period is before Christmas, makes sense for a toy company.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result7.png" alt=""></br>
+									<p><i>Displaying records 1 - 12.</i></p><br>
+								</div><br>
+								<h2>Scenario 9:</h2>
+							<p>Yearly revenue:</p></br><br>		
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query8.png" alt=""><br></br>	
+									<p>Our best year was 2004, we should take this year as an example and keep it up!!</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result8.png" alt=""></br>
+									<p><i>Displaying records 1 - 3.</i></p><br>
+								</div><br>
+									<h2>Scenario 10:</h2>
+							<p>Total sales per product line:</p></br><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query9.png" alt=""><br></br>	
+									<p>We can try to increase revenue for <i>"trains"</i> and <i>"ships"</i>.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result9.png" alt=""></br>
+									<p><i>Displaying records 1 - 7.</i></p><br>
+								</div><br>
+								<h2>Scenario 11:</h2>
+							<p>Stock by product line:</p></br><br>				
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query10.png" alt=""><br></br>	
+									<p>Similar ranking as figure shown above, we are doing great in terms of stocking and inventory.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result10.png" alt=""></br>	
+									<p><i>Displaying records 1 - 7.</i></p><br>
+								</div><br>
+									<h2>Scenario 12:</h2>
+							<p>Create a ranking of products by product line:</p></br><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query11.png" alt=""><br></br>	
+									<p>The login behind this query is for e.g., <i>"Classic Cars model S18_3232"</i> ranks first followed by <i>"S24_3856"</i>, and so on.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result11.png" alt=""></br>
+									<p><i>Displaying records 1 - 21 from 109.</i></p><br>
+								</div><br>
+										<h2>Scenario 13:</h2>
+							<p>Product by revenue and quantity sold:</p></br><br>		
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query12.png" alt=""><br></br>	
+									<p>Most popular item is <i>"1992 Ferrari 360 Spider red"</i>.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result12.png" alt=""></br>
+									<p><i>Displaying records 1 - 15 from 109.</i></p><br>
+								</div><br>
+											<h2>Scenario 14:</h2>
+							<p>Product by stock:</p></br><br>			
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query13.png" alt=""><br></br>	
+									<p><i>"2002 Suzuki XREO"</i> has the highest quantity in stock. This model is also 10th in total revenue. It may be benefitial<br>to look for high stocked items with low revenue, maybe it is a good moment to offer discounts and lower stocks.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result13.png" alt=""></br>
+									<p><i>Displaying records 1 - 20 from 109.</i><p/><br>
+								</div><br>
+											<h2>Scenario 15:</h2>
+							<p>We want to find out what percentatge of models hit 80% of total sales volume:</p></br><br>				
+								<div class="col-lg-12">						
+									<img class="img-fluid" src="../assets/img/sql/query14.png" alt=""><br></br>	
+									<p>We can see that cumulative distribution is balanced, looking at this ranking we hit 80%<br> of sales at product 88 <i>"S32_3207 1950's Chicago Surface Lines Streetcar"</i> from a total of 109.<br>As a final thought, the company is balanced and well diversified.</p><br><br>
+									<img class="img-fluid"  src="../assets/img/sql/result14.png" alt=""></br>
+									<p><i>Displaying records 1 - 28 from 109.</i></p><br>
+								</div><br>
+											<h2>Notes:</h2>
+									
+											
+									<p>I hope you have enjoyed going through all these samples, I know you cannot copy the sql code</br>	
+									
+									 from the images for that I leave you a link to access to all sql code : <a href="#">scenarios.sql</a></p>
+											
+									
+							
+					</div>
+					
+				</div>
+			
+		</div>
+	</section>
+	<!--================ End Portfolio Area =================-->
+
+	<!--================ Start Footer Area =================-->
+	<footer class="footer_area section_gap">
+		<div class="container">
+			<div class="row footer_inner justify-content-center">
+				<div class="col-lg-6 text-center">
+					<aside class="f_widget social_widget">
+						<div class="f_logo">
+							<img src="../assets/img/logo.png" alt="">
+						</div>
+						<div class="f_title">
+							<h4>Contact Me</h4>
+						</div>
+						<ul class="list">
+							<li><a href="https://www.linkedin.com/in/josemariaricoleal/"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://www.strava.com/athletes/38180709"><i class='bi bi-strava'></i></a></li>
+						</ul>
+						
+					</aside>
+					<div class="copyright">
+						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Powered with&nbsp<i class="fa fa-heart" aria-hidden="true"></i>&nbsp by Jose Rico<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright &copy;<script>document.write(new Date().getFullYear());</script>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="../assets/js/jquery-3.2.1.min.js"></script>
+	<script src="../assets/js/popper.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/stellar.js"></script>
+	<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="../assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="../assets/vendors/isotope/isotope-min.js"></script>
+	<script src="../assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../assets/js/jquery.ajaxchimp.min.js"></script>
+	<script src="../assets/js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="../assets/js/gmaps.min.js"></script>
+	<script src="../assets/js/theme.js"></script>
+</body>
+
+</html>
