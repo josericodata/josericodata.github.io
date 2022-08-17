@@ -28,6 +28,16 @@ theme.
   color:#222222;
   text-align: left; /*---------Used in power bi to center ul li 10/08/2022--------------------*/
 }
+
+#padding{			/*---------Index page used to bring down contact icons in header 17/08/2022--------------------*/
+	 margin-top:50px;
+}
+
+
+.font h1{		/*---------Jose Rico name in index page adjusting font and top position 17/08/2022--------------------*/
+font-size: 60px;
+margin-top:25px;
+}
 /*---------Almost crying this class centers and aligns right all text 10/08/2022--------------------*/
 .row p{
 	text-align: left;
@@ -85,23 +95,12 @@ button:focus {
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-.section_gap {
-  padding: 120px 0; }
+.section_gap {						/*Adjusting footer size it was too big 17-08-2022*/
+  padding: 10px 0; } 
   @media (max-width: 991px) {
     .section_gap {
       padding: 80px 0; } }
 
-.section_gap_top {
-  padding-top: 120px; }
-  @media (max-width: 991px) {
-    .section_gap_top {
-      padding-top: 80px; } }
-
-.section_gap_bottom {
-  padding-bottom: 120px; }
-  @media (max-width: 991px) {
-    .section_gap_bottom {
-      padding-bottom: 80px; } }
 
 .gray-bg {
   background: #f9f9ff; }
@@ -381,7 +380,7 @@ button:focus {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 400px;
+    min-height: 250px; /*Adjust banner height*/
     background-image: url(../img/banner/common-banner.jpg);
     background-size: cover;
     z-index: 1; }
