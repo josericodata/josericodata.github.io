@@ -1,248 +1,317 @@
 <!-- Autor: Jose Maria Rico Leal-->
 <!-- Project: Data Analyst Porfolio Web Design-->
-<!-- Date: 02/08/2022-->
-<!doctype html>
+<!-- Date: 04/07/2024-->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-18B7811ES3"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-18B7811ES3');
-	</script>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="google-site-verification" content="mH8Z2zrOpw1mYTgLbcBfz2-kqumCG0uYSO2rDq7_Dtg" />
-	<link rel="canonical" href="https://josericodata.github.io/index.html">
-	<link rel="alternate" media="only screen and (max-width: 640px)"  href="https://josericodata.github.io/index.html">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Welcome to my data analyst portfolio, here I show my skills, my interests and by the design of the website you will get to know me">
-	<meta name="keywords" content="Portfolio, data, analyst, data analyst,business, intelligence, business intelligence, BI, storyteller,Power BI, MySQL, SQL, R, Python, Tableau,Alterix ,Dublin, Ireland, CV, job, job seeking">	
-	<meta name="og:title" property="og:title" content="Data Analyst porfolio">
-	<link rel="icon" href="assets/img/favicon.png" type="image/png">
-	<title>Start | Jose Rico Data Analyst Portfolio</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/vendors/linericon/style.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/vendors/lightbox/simpleLightbox.css">
-	<link rel="stylesheet" href="assets/vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="assets/vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Rico Portfolio</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-18B7811ES3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-18B7811ES3');
+    </script>
+    <!-- Required meta tags -->
+    <meta name="google-site-verification" content="mH8Z2zrOpw1mYTgLbcBfz2-kqumCG0uYSO2rDq7_Dtg" />
+    <link rel="canonical" href="https://josericodata.github.io/index.html">
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://josericodata.github.io/index.html">
+    <meta name="description" content="Welcome to my data analyst portfolio, here I show my skills, my interests and by the design of the website you will get to know me">
+    <meta name="keywords" content="Portfolio, data, analyst, data analyst, business, intelligence, business intelligence, BI, storyteller, Power BI, MySQL, SQL, R, Python, Tableau, Alteryx, Dublin, Ireland, CV, job, job seeking">
+    <meta name="og:title" property="og:title" content="Data Analyst Portfolio">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+        }
+        header {
+            background: #3c3c3c;
+            color: #dcdcdc;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .section {
+            padding: 2rem 0;
+        }
+        .skills, .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            margin: 1rem 0;
+            background: #2d2d2d;
+            border: 1px solid #4d4d4d;
+        }
+        .card-body {
+            color: #dcdcdc;
+        }
+        footer {
+            background: #3c3c3c;
+            color: #dcdcdc;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .section h2, .card-title {
+            font-family: 'Courier New', Courier, monospace;
+        }
+		p {
+            font-size: 1.3rem; /* Increase this value as needed */
+        }
+
+    </style>
 </head>
-
 <body>
-
-	<!--================Header Menu Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="font">
-					<h1>Jose Rico</h1>
-					</div>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							
-							<li class="nav-item active"><a class="nav-link" href="index.html">Start</a></li>
-							<li class="nav-item"><a class="nav-link" href="pages/sql.html">SQL</a></li>
-							<li class="nav-item"><a class="nav-link" href="pages/python.html">Python</a></li>
-							<li class="nav-item"><a class="nav-link" href="pages/r.html">R</a></li>
-							<li class="nav-item"><a class="nav-link" href="pages/powerbi.html">Power BI</a></li>
-							<li class="nav-item"><a class="nav-link" href="cv/Jose_Rico_CV.pdf">CV</a></li>
-							
-						</ul>
-					</div>
-				</div>
-			</nav>
-			
-		</div>
-	</header>
-	
-	<!--================Header Menu Area =================-->
-	
-	
-
-	<!--================ About Banner Area =================-->
-	<section class="banner_area">
-	
-		<div class="banner_inner d-flex align-items-center"><br><br>
-			<div class="container">
-				<div class="banner_content text-right">
-					
-					
-						<div class="f_widget social_widget_1">
-							<div class="f_title" id="padding">
-							
-								<div>
-									<ul class="list">								
-										
-										<li><p>maninastre@gmail.com<p></li>
-										<li><a href="#"><i class="fa fa-envelope"></i></a></li>
-									</ul>
-								</div>
-								<div>
-									<ul class="list" >
-										
-										<li><p>+353894520767</p></li>
-										<li><a href="#"><i class="fa fa-mobile-phone"></i></a></li>
-									</ul>
-								</div>
-								</div>
-								<div>
-									<ul class="list">
-										
-										<li><p>Dublin, Ireland</p></li>
-										<li><a href="#"><i class="fa fa-location-arrow"></i></a></li>
-									</ul>
-								</div>
-	
-	
-							</div>
-						</div>	
-					
-				</div>
-			</div>
-		</div>
-	</section><br><br>
-	<!--================End About Banner Area =================-->
-
-	<!--================ Start About Area =================-->
-	<section class="about-area section_gap gray-bg">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<img class="img-fluid" src="assets/img/me.jpg" alt="">
-					<p>Me smiling &#128516;</p>
-				</div>
-				<div class="col-lg-6 col-md-12 about-right">
-					<div class="main-title text-left">
-						<h1>about me</h1>
-					</div>
-					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
-						<p>
-							Hi welcome and many thanks for visiting my portfolio!!<br>
-							My name is Jose and I have immersed myself into this new era of <i>"Data Analysis"</i>
-							in September 2019 when I have enrolled into a diploma in <i>"Big Data for Business"</i> at 
-							<i>"Dublin Business School"</i>, I felt in love ever since with <i>"MySQL"</i> and <i>"PowerBI".</i><br></p>
-						<p>I am currently working as a <i>"Pricing Analyst"</i> in a pharma company since April 2020. Here I have got great
-							exposure to <i>"python"</i>, as I am using it every day to create and automate reports for different stakeholders.
-							From time to time I get enquiries to create <i>"R"</i> plots based on deviation, mean and variance. Part of my day
-							to day job is to create <i>"SQL"</i> queries to assist the needs of my colleagues when asking for certain reports.
-							Summarising my duties, what I like the most is <i>"PowerBI"</i>, there is famous quote that it says
-							<i>"A PowerBi dashboard is worth a thousand words"</i>, this tool gives you the confidence that
-							your audience will get your message across. I am really happy enabling my colleagues in making evidence-driven decisions
-							by using effectively our data.
-						</p>
-						<p>Now you know how passionate I am about <i>"Data Science"</i>. In this porfolio there are four pages dedicated to the technologies
-						I use every day, if you would like to replicate or to get some guidance about them please do not hesitate to contact me, I will be
-						delighted assisting you!!
-						</p>
-					</div>
-			
-				
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!--================ End About Area =================-->
-	
-	<!--================ Start About Area =================-->
-	<section class="about-area section_gap gray-bg">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<img class="img-fluid" src="assets/img/bike.jpg" alt="">
-					<p>Heading to Dublin through Sally Gap, after looping around Laragh &#128555</p>
-				</div>
-				<div class="col-lg-6 col-md-12 about-right">
-					<div class="main-title text-left">
-						<h1>Hobbies</h1>
-					</div>
-					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
-						<p>
-							As you can see in the picture that is my biggest passion <i>"Road Cycling"</i>, few years ago I tried
-							to become a pro but as you can imagine I could not make it. Nevertheless, in cycling I have learnt
-							values such as <i>"sacrifice"</i>, <i>"resilience"</i> and <i>"perseverance"</i> those reside in me since then.
-						</p>
-						<p>Over the weekend I always watch <i>"Elche CF"</i> soccer matches, interesting to see how they keep up in the first tier
-						of the Spanish league with the likes of <i>"Real Madrid CF"</i> and <i>"FC Barcelona"</i>. Being from Alicante and since
-						<i>"Hércules de Alicante CF"</i> dropped to the fourth tier I have to go with the <i>"Ilicitanos"</i>.
-						</p>
-					
-					</div>
-				
-				</div>
-			</div>
-		</div>
-	</section><br><br>
-	<!--================ End About Area =================-->
-
-
-	
-
-	<!--================ Start Footer Area =================-->
-	<footer class="footer_area section_gap">
-		<div class="container">
-			<div class="row footer_inner justify-content-center">
-				<div class="col-lg-6 text-center">
-					<aside class="f_widget social_widget">
-						<div class="f_logo">
-							<img src="assets/img/logo.png" alt="">
-						</div>
-						<div class="f_title">
-							<h4>Contact Me</h4>
-						</div>
-						<ul class="list">
-							<li><a href="https://www.linkedin.com/in/josemariaricoleal/"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://github.com/josericodata"><i class="fa fa-github"></i></a></li>
-							<li><a href="https://www.strava.com/athletes/38180709"><i class='bi bi-strava'></i></a></li>
-						</ul>
-						
-					</aside>
-					<div class="copyright">
-						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Powered with&nbsp<i class="fa fa-heart" aria-hidden="true"></i>&nbsp by Jose Rico<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright &copy;<script>document.write(new Date().getFullYear());</script>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-
-
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="assets/js/jquery-3.2.1.min.js"></script>
-	<script src="assets/js/popper.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/stellar.js"></script>
-	<script src="assets/vendors/lightbox/simpleLightbox.min.js"></script>
-	<script src="assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="assets/vendors/isotope/isotope-min.js"></script>
-	<script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-	<script src="assets/js/mail-script.js"></script>
-	<script src="assets/js/theme.js"></script>
+    <header>
+        <h1>Jose Rico</h1>
+        <p>Pricing Analyst @ Cardinal Health</p>
+    </header>
+    <div class="container">
+        <section class="section introduction">
+            <h2 class="text-center">About Me</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/bike.jpg" alt="Jose Biking" class="img-fluid rounded-circle mx-auto d-block">
+                </div>
+                <div class="col-md-8">
+                    <p class="text-center">Hello! I’m Jose, a Spaniard who has been living in Ireland for six years. Currently, I’m working at Cardinal Health as a Pricing Analyst. In this role, I assist commercial teams in gaining a clear understanding of the data being loaded into Salesforce and synced with SAP. Essentially, I act as the bridge between business and IT, helping to build visuals and manage pricing migration. I am on a journey to become a Data Analyst, which is why I am currently pursuing a Master of Science in Data Analytics at CCT College. My experience and education have equipped me with strong analytical skills, and I am proficient in data visualization and analysis. I am passionate about using data to drive business solutions and am eager to take on new challenges in the field of data analytics.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section experience">
+            <h2 class="text-center">Experience</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Senior Pricing Analyst at Cardinal Health</h3>
+                            <p class="card-text">Apr. 2020 - Present</p>
+                            <p class="card-text">Creating and automating reports through SQL and Python based on stakeholders' requirements. Building dashboards in Power BI to drive insights regarding KPIs. Maintaining offers and tenders prices in SAP, ensuring accurate uploads to avoid future price discrepancies. Investigating customer price discrepancies and implementing preventive measures to enhance the company's financial health. Collaborating with the analytics team to design, develop, and deploy powerful business metrics and reporting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Community Operations Analyst at Facebook by CPL</h3>
+                            <p class="card-text">Jan. 2019 - Mar. 2020</p>
+                            <p class="card-text">Identifying and escalating cases regarding safety according to Facebook policies. Enforcing and improving Facebook policies by working closely with the global policy team. Monitoring trends and rating performance across Spanish communities, researching and troubleshooting variations in performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Claims Manager at Puertas Castalla, S.L.</h3>
+                            <p class="card-text">Mar. 2017 - Oct. 2018</p>
+                            <p class="card-text">Managing fraud prevention related to inappropriate brand use. Analyzing performance data to enhance productivity and quality ratios, considering customer feedback. Developing and implementing quality product standards to meet ISO 9001:2015 quality standards and ISO 14001:2015 environmental requirements.</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Account Manager at Puertas Castalla, S.L.</h3>
+                            <p class="card-text">Oct. 2014 - Nov. 2016</p>
+                            <p class="card-text">Managed orders, stock, and inventory while maintaining strong customer relationships. Oversaw a portfolio of nearly 200 client accounts, acting as the primary liaison between the consumer and the corporation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section education">
+            <h2 class="text-center">Education</h2>
+            <div class="row">
+				<div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Master of Science in Data Analytics</h3>
+                            <p class="card-text">CCT College, Sept. 2023 - Expected Oct. 2024</p>
+                            <p class="card-text">Level 9 National Framework of Qualification (NFQ).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Higher Diploma in Science in Computing - Software Development</h3>
+                            <p class="card-text">Dublin Business School, Sept. 2020 - Sept. 2022</p>
+                            <p class="card-text">Level 8 National Framework of Qualification (NFQ).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Diploma in Big Data for Business</h3>
+                            <p class="card-text">Dublin Business School, Sept. 2019 - May 2020</p>
+                            <p class="card-text">Level 7 National Framework of Qualification (NFQ).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Bachelor’s Degree in Business & Management</h3>
+                            <p class="card-text">University of Alicante, Sept. 2010 - Jun. 2016</p>
+                            <p class="card-text">Level 6 European Qualification Framework (EQF).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section skills">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-code fa-3x"></i>
+                            <h3 class="card-title mt-3">Programming Languages</h3>
+                            <p class="card-text">Python, R, C#, JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-file-code fa-3x"></i>
+                            <h3 class="card-title mt-3">Other Languages</h3>
+                            <p class="card-text">SQL, HTML, CSS, LaTeX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-tools fa-3x"></i>
+                            <h3 class="card-title mt-3">Tools</h3>
+                            <p class="card-text">Tableau, Power BI, Linux</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-cogs fa-3x"></i>
+                            <h3 class="card-title mt-3">ERP's</h3>
+                            <p class="card-text">SAP & Salesforce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-chart-line fa-3x"></i>
+                            <h3 class="fas fa-robot fa-3x">ML</h3>
+                            <p class="card-text">K-Means, GridSearch, NN's, CNN's</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-chart-line fa-3x"></i>
+                            <h3 class="card-title mt-3">Big Data</h3>
+                            <p class="card-text">Hadoop, Spark, MapReduce, Hive, Cassandra, MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<section class="section projects">
+            <h2 class="text-center">MSc Projects</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Semester One CA1</h3>
+                            <p class="card-text">Recent Demographic History in the Republic of Ireland.</p>
+							<a href="https://github.com/josericodata/MScDataAnalyticsFirstSemesterAssignmentOne.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Semester One CA2</h3>
+                            <p class="card-text">Analysis of the Irish Transport Sector: A Comparative Study with EU Countries.</p>
+							<a href="https://github.com/josericodata/MScDataAnalyticsFirstSemesterAssignmentTwo.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Semester Two CA1</h3>
+                            <p class="card-text">Storage Solutions and Data Analytics: RDBMS, Hadoop and APIs in Neural Networks Contexts.</p>
+							<a href="https://github.com/josericodata/MScDataAnalyticsSecondSemesterAssignmentOne.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">						
+                            <h3 class="card-title">Semester Two CA2</h3>
+                            <p class="card-text">Big Data Storage, Processing, and Advanced Data Analytics for Twitter Data.</p>
+							<a href="https://github.com/josericodata/MScDataAnalyticsSecondSemesterAssignmentTwo.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<section class="section projects">
+            <h2 class="text-center">Curriculum Vitae</h2>
+			<div class="col-md-9">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Please download here:</h3>                           
+							<a href="assets/CV/Jose_Rico_CV.pdf" target="_blank"><i class="fas fa-download fa-3x"></i></a></p>
+                        </div>
+                    </div>
+            </div>	
+        </section>
+        <section class="section projects">
+		<h2 class="text-center">Contact</h2>
+			<div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+							<p class="text-center">Phone: <a href="tel:+353894520767">+353 89 456 0767</a></p>
+							<p class="text-center">Email: <a href="mailto:maninastre@gmail.com">maninastre@gmail.com</a></p>
+							<p class="text-center">GitHub: <a href="https://github.com/josericodata" target="_blank">github.com/josericodata</a></p>
+							<p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/josericodata/" target="_blank">linkedin.com/in/josericodata</a></p>
+                        </div>
+                    </div>
+            </div>
+            
+        </section>
+    </div>
+    <footer>
+          <p>&copy; <span id="current-year"></span> Jose Rico. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	 <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
 </body>
-
 </html>
