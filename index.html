@@ -58,11 +58,61 @@
             background: #3c3c3c;
             color: #dcdcdc;
             text-align: center;
-            padding: 1rem 0;
+            padding: 20px;
             position: relative;
             bottom: 0;
             width: 100%;
         }
+		.footer-content {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 20px;
+		}
+
+		.footer-section {
+			flex: 1;
+			min-width: 200px;
+			text-align: center;
+		}
+
+		.footer-section h3 {
+			margin-bottom: 8px;
+			font-size: 1.1em;
+		}
+
+		.contact-pair {
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 10px;
+		}
+
+		.contact-pair p {
+			margin: 0;
+			display: flex;
+			align-items: center;
+		}
+
+		.contact-pair i {
+			margin-right: 5px;
+			color: #007bff;
+		}
+
+		.footer-section a {
+			color: #007bff;
+			text-decoration: none;
+		}
+
+		.footer-section a:hover {
+			color: #0056b3;
+		}
+
+		.footer-bottom {
+			margin-top: 20px;
+			font-size: 0.9em;
+			color: #6c757d;
+		}
         .contact a {
             color: #61dafb;
             text-decoration: none;
@@ -82,7 +132,7 @@
 <body>
     <header>
         <h1>Jose Rico</h1>
-        <p>Pricing Analyst @ Cardinal Health</p>
+        <p>Pricing Analyst | MSc Data Analytics</p>
     </header>
     <div class="container">
         <section class="section introduction">
@@ -92,23 +142,14 @@
                     <img src="assets/img/bike.jpg" alt="Jose Biking" class="img-fluid rounded-circle mx-auto d-block">
                 </div>
                 <div class="col-md-8">
-                    <p class="text-center">
-						Hello! I’m Jose, a Spaniard who has been living in Ireland for six years. I’m currently working as a Pricing Analyst at Cardinal Health, where I help bridge business and IT by supporting commercial teams with data migration and visualization tasks. In this role, I ensure accurate data flow between Salesforce and SAP, providing valuable insights for pricing management.
+                    <p class="text-justify">
+						Hello! I’m Jose, a Spaniard who has been living in Ireland for six years. Currently, I work as a Pricing Analyst at Cardinal Health, supporting commercial teams with data migration and visualization, ensuring accurate data flow between Salesforce and SAP.
 					</p>
-					<p class="text-center">
-						I recently graduated with a Master of Science in Data Analytics from CCT College, Dublin. My coursework covered diverse aspects of data science, including <strong>Machine Learning for Data Analytics</strong>, <strong>Data Preparation & Visualisation</strong>, and <strong>Big Data Storage & Processing</strong>, providing me with a strong foundation in statistical analysis, predictive modeling, and data engineering.
+					<p class="text-justify">
+						I recently graduated with a Master of Science in Data Analytics from CCT College, Dublin, where I developed skills in <strong>Machine Learning</strong>, <strong>Data Preparation & Visualisation</strong>, and <strong>Big Data Processing</strong>. My <strong>final project</strong> focused on building a Federated Learning (FL) server to simulate real-world decentralized model training, enhancing model accuracy for various scenarios.
 					</p>
-					<p class="text-center">
-						My final <strong>Data Analytics Project</strong> served as the capstone of my program and focused on developing a cross-client horizontal Federated Learning (FL) server to explore decentralized model training—a critical area in modern machine learning.
-					</p>
-					<p class="text-center">
-						In this project, I assessed five widely-used FL frameworks and found that many current implementations emphasize academic examples rather than real-world applications. To address this gap, I created an FL server designed for two distinct scenarios—technological and medical—using both Independent and Identically Distributed (IID) and non-IID data. In the technological scenario, I implemented a binary classification model using synthetic tabular data, while the medical scenario tackled image classification. For both use cases, I connected five clients to a central server and conducted model training over five rounds, using a Federated Weighted Average (FedWAvg) algorithm to aggregate results.
-					</p>
-					<p class="text-center">
-						The findings underscored the effectiveness of FL in improving model accuracy for non-IID data in the technological scenario, though further research is needed to address real-world challenges, particularly for medical data. Through this project, I gained invaluable hands-on experience with FL systems and developed a realistic prototype, highlighting areas for future work such as dynamic data integration and enhanced privacy mechanisms.
-					</p>
-					<p class="text-center">
-						I’m passionate about using data to drive impactful solutions and excited to tackle new challenges in the field of data analytics as I advance my career.
+					<p class="text-justify">
+						This experience gave me hands-on expertise in advanced data systems, and I’m passionate about leveraging data to drive impactful business solutions. I’m excited to take on new challenges as I continue my journey in data analytics.
 					</p>
                 </div>
             </div>
@@ -121,7 +162,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Senior Pricing Analyst at Cardinal Health</h3>
                             <p class="card-text">Apr. 2020 - Present</p>
-                            <p class="card-text">Creating and automating reports through SQL and Python based on stakeholders' requirements. Building dashboards in Power BI to drive insights regarding KPIs. Maintaining offers and tenders prices in SAP, ensuring accurate uploads to avoid future price discrepancies. Investigating customer price discrepancies and implementing preventive measures to enhance the company's financial health. Collaborating with the analytics team to design, develop, and deploy powerful business metrics and reporting.</p>
+                            <p class="card-text text-justify">Creating and automating reports through SQL and Python based on stakeholders' requirements. Building dashboards in Power BI to drive insights regarding KPIs. Maintaining offers and tenders prices in SAP, ensuring accurate uploads to avoid future price discrepancies. Investigating customer price discrepancies and implementing preventive measures to enhance the company's financial health. Collaborating with the analytics team to design, develop, and deploy powerful business metrics and reporting.</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +171,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Community Operations Analyst at Facebook by CPL</h3>
                             <p class="card-text">Jan. 2019 - Mar. 2020</p>
-                            <p class="card-text">Identifying and escalating cases regarding safety according to Facebook policies. Enforcing and improving Facebook policies by working closely with the global policy team. Monitoring trends and rating performance across Spanish communities, researching and troubleshooting variations in performance.</p>
+                            <p class="card-text text-justify">Identifying and escalating cases regarding safety according to Facebook policies. Enforcing and improving Facebook policies by working closely with the global policy team. Monitoring trends and rating performance across Spanish communities, researching and troubleshooting variations in performance.</p>
                         </div>
                     </div>
                 </div>
@@ -139,7 +180,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Claims Manager at Puertas Castalla, S.L.</h3>
                             <p class="card-text">Mar. 2017 - Oct. 2018</p>
-                            <p class="card-text">Managing fraud prevention related to inappropriate brand use. Analyzing performance data to enhance productivity and quality ratios, considering customer feedback. Developing and implementing quality product standards to meet ISO 9001:2015 quality standards and ISO 14001:2015 environmental requirements.</p>
+                            <p class="card-text text-justify">Managing fraud prevention related to inappropriate brand use. Analyzing performance data to enhance productivity and quality ratios, considering customer feedback. Developing and implementing quality product standards to meet ISO 9001:2015 quality standards and ISO 14001:2015 environmental requirements.</p>
                         </div>
                     </div>
                 </div>
@@ -148,7 +189,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Account Manager at Puertas Castalla, S.L.</h3>
                             <p class="card-text">Oct. 2014 - Nov. 2016</p>
-                            <p class="card-text">Managed orders, stock, and inventory while maintaining strong customer relationships. Oversaw a portfolio of nearly 200 client accounts, acting as the primary liaison between the consumer and the corporation.</p>
+                            <p class="card-text text-justify">Managed orders, stock, and inventory while maintaining strong customer relationships. Oversaw a portfolio of nearly 200 client accounts, acting as the primary liaison between the consumer and the corporation.</p>
                         </div>
                     </div>
                 </div>
@@ -161,8 +202,9 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <h3 class="card-title">Master of Science in Data Analytics</h3>
-                            <p class="card-text">CCT College, Sept. 2023 - Expected Oct. 2024</p>
-                            <p class="card-text">Level 9 National Framework of Qualification (NFQ).</p>
+                            <p class="card-text">CCT College, Sept. 2023 - Oct. 2024</p>                          
+							<p class="card-text">Grade: 6.2 (Second-Class Honours)</p>                        
+							<p class="card-text">Level 9 National Framework of Qualification (NFQ)</p>
                         </div>
                     </div>
                 </div>
@@ -171,7 +213,8 @@
                         <div class="card-body">
                             <h3 class="card-title">Higher Diploma in Science in Computing - Software Development</h3>
                             <p class="card-text">Dublin Business School, Sept. 2020 - Sept. 2022</p>
-                            <p class="card-text">Level 8 National Framework of Qualification (NFQ).</p>
+							<p class="card-text">Grade: 7.3 (First-Class Honours)</p>     
+                            <p class="card-text">Level 8 National Framework of Qualification (NFQ)</p>
                         </div>
                     </div>
                 </div>
@@ -180,7 +223,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Diploma in Big Data for Business</h3>
                             <p class="card-text">Dublin Business School, Sept. 2019 - May 2020</p>
-                            <p class="card-text">Level 7 National Framework of Qualification (NFQ).</p>
+                            <p class="card-text">Level 7 National Framework of Qualification (NFQ)</p>
                         </div>
                     </div>
                 </div>
@@ -189,7 +232,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Bachelor’s Degree in Business & Management</h3>
                             <p class="card-text">University of Alicante, Sept. 2010 - Jun. 2016</p>
-                            <p class="card-text">Level 6 European Qualification Framework (EQF).</p>
+                            <p class="card-text">Level 6 European Qualification Framework (EQF)</p>
                         </div>
                     </div>
                 </div>
@@ -255,13 +298,13 @@
             </div>
         </section>
 		<section class="section projects">
-            <h2 class="text-center">MSc Projects</h2>
+            <h2 class="text-center">MSc Assignments</h2>
             <div class="row">
                 <div class="col-md-3">
                     <div class="card text-center">
                         <div class="card-body">
                             <h3 class="card-title">Semester One CA1</h3>
-                            <p class="card-text">Recent Demographic History in the Republic of Ireland.</p>
+                            <p class="card-text text-left">Recent Demographic History in the Republic of Ireland.</p>
 							<a href="https://github.com/josericodata/MScDataAnalyticsFirstSemesterAssignmentOne.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
                         </div>
                     </div>
@@ -270,7 +313,7 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <h3 class="card-title">Semester One CA2</h3>
-                            <p class="card-text">Analysis of the Irish Transport Sector: A Comparative Study with EU Countries.</p>
+                            <p class="card-text text-left">Analysis of the Irish Transport Sector: A Comparative Study with EU Countries.</p>
 							<a href="https://github.com/josericodata/MScDataAnalyticsFirstSemesterAssignmentTwo.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
                         </div>
                     </div>
@@ -279,7 +322,7 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <h3 class="card-title">Semester Two CA1</h3>
-                            <p class="card-text">Storage Solutions and Data Analytics: RDBMS, Hadoop and APIs in Neural Networks Contexts.</p>
+                            <p class="card-text text-left">Storage Solutions and Data Analytics: RDBMS, Hadoop and APIs in Neural Networks Contexts.</p>
 							<a href="https://github.com/josericodata/MScDataAnalyticsSecondSemesterAssignmentOne.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
                         </div>
                     </div>
@@ -288,47 +331,71 @@
                     <div class="card text-center">
                         <div class="card-body">						
                             <h3 class="card-title">Semester Two CA2</h3>
-                            <p class="card-text">Big Data Storage, Processing, and Advanced Data Analytics for Twitter Data.</p>
+                            <p class="card-text text-left">Big Data Storage, Processing, and Advanced Data Analytics for Twitter Data.</p>
 							<a href="https://github.com/josericodata/MScDataAnalyticsSecondSemesterAssignmentTwo.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-		<section class="section projects">
-            <h2 class="text-center">Curriculum Vitae</h2>
-			<div class="col-md-9">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Please download here:</h3>                           
-							<a href="assets/CV/Jose_Rico_CV.pdf" target="_blank"><i class="fas fa-download fa-3x"></i></a></p>
-                        </div>
-                    </div>
-            </div>	
-        </section>
-        <section class="section projects">
-		<h2 class="text-center">Contact</h2>
+		
+		<h2 class="text-center">MSc Capstone Project</h2>
 			<div class="col-md-12">
                     <div class="card text-center">
                         <div class="card-body">
-							<p class="text-center">Phone: <a href="tel:+353894520767">+353 89 456 0767</a></p>
-							<p class="text-center">Email: <a href="mailto:maninastre@gmail.com">maninastre@gmail.com</a></p>
-							<p class="text-center">GitHub: <a href="https://github.com/josericodata" target="_blank">github.com/josericodata</a></p>
-							<p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/josericodata/" target="_blank">linkedin.com/in/josericodata</a></p>
+							<h3 class="card-title">Federated Learning: Evaluating Popular Frameworks and Developing a Cross-Client Horizontal Server</h3>
+                            <p class="card-text text-justify">This project investigates Federated Learning (FL), a decentralized machine learning approach that enhances data privacy. It evaluates five popular FL frameworks and develops a cross-client horizontal FL server for both technological and medical scenarios using IID and non-IID data. The findings reveal improved model accuracy in the technological scenario but a slight decline in the medical scenario. The research highlights the potential of FL while identifying limitations and areas for future improvement in server infrastructure and privacy concerns.</p>
+							<a href="https://github.com/JoseRicoCct/Capstone_MScData_Sept23_SB" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+							<iframe width="860" height="615" src="https://www.youtube.com/embed/vErRPw0Rasw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
-            </div>
-            
+					
+            </div> 
         </section>
+		
     </div>
-    <footer>
-          <p>&copy; <span id="current-year"></span> Jose Rico. All rights reserved.</p>
-    </footer>
+	<footer>
+		<div class="footer-content">
+			
+
+			<!-- Contact Section -->
+			<div class="footer-section">
+				<h3>Contact</h3>
+				<div class="contact-pair">
+					<p><i class="fas fa-phone"></i> <a href="tel:+353894520767">+353 89 456 0767</a></p>
+					<p><i class="fas fa-envelope"></i> <a href="mailto:maninastre@gmail.com">Email Me</a></p>
+				</div>
+				<div class="contact-pair">
+					<p><i class="fab fa-github"></i> <a href="https://github.com/josericodata" target="_blank">GitHub</a></p>
+					<p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/josericodata/" target="_blank">LinkedIn</a></p>
+				</div>
+			</div>
+			<!-- Curriculum Vitae Section -->
+			<div class="footer-section">
+				<h3>Curriculum Vitae</h3>
+				<a href="assets/CV/Jose_Rico_CV.pdf" target="_blank">
+					<i class="fas fa-download"></i> Download CV
+				</a>
+			</div>
+			<!-- Curriculum Vitae Section -->
+			<div class="footer-section">
+				<h3>MSc Transcript</h3>
+				<a href="assets/transcript/Transcript_MSc_Data_Analytics_sba23021.pdf"  target="_blank">
+					<i class="fas fa-download"></i> Download MSc Transcript
+				</a>
+			</div>
+		</div>
+		
+
+		<!-- Copyright Section -->
+		<div class="footer-bottom">
+			<p>&copy; <span id="current-year"></span> Jose Rico.</p>
+		</div>
+	</footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	 <script>
-        document.getElementById("current-year").textContent = new Date().getFullYear();
-    </script>
+	<script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
