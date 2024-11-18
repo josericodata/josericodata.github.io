@@ -126,6 +126,23 @@
 		p {
             font-size: 1.3rem; /* Increase this value as needed */
         }
+		
+		.video-container {
+		  position: relative;
+		  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+		  height: 0;
+		  overflow: hidden;
+		  max-width: 100%; /* Ensures the container doesn't exceed the screen width */
+		}
+
+		.video-container iframe {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		}
+
 
     </style>
 </head>
@@ -346,8 +363,10 @@
 							<h3 class="card-title">Federated Learning: Evaluating Popular Frameworks and Developing a Cross-Client Horizontal Server</h3>
                             <p class="card-text text-justify">This project investigates Federated Learning (FL), a decentralized machine learning approach that enhances data privacy. It evaluates five popular FL frameworks and develops a cross-client horizontal FL server for both technological and medical scenarios using IID and non-IID data. The findings reveal improved model accuracy in the technological scenario but a slight decline in the medical scenario. The research highlights the potential of FL while identifying limitations and areas for future improvement in server infrastructure and privacy concerns.</p>
 							<a href="https://github.com/JoseRicoCct/Capstone_MScData_Sept23_SB" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
-							<iframe width="860" height="615" src="https://www.youtube.com/embed/vErRPw0Rasw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+							<div class="video-container">
+							 <iframe width="860" height="615" src="https://www.youtube.com/embed/vErRPw0Rasw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
                     </div>
 					
             </div> 
