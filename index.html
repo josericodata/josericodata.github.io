@@ -1,156 +1,43 @@
-<!-- Autor: Jose Maria Rico Leal-->
-<!-- Project: Data Analyst Porfolio Web Design-->
-<!-- Date: 04/07/2024-->
+<!-- Autor: Jose Maria Rico Leal -->
+<!-- Project: Data Analyst Portfolio Web Design -->
+<!-- Date: 04/07/2024 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jose Rico Portfolio</title>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-18B7811ES3"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-18B7811ES3');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-18B7811ES3');
     </script>
-    <!-- Required meta tags -->
     <meta name="google-site-verification" content="mH8Z2zrOpw1mYTgLbcBfz2-kqumCG0uYSO2rDq7_Dtg" />
     <link rel="canonical" href="https://josericodata.github.io/index.html">
-    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://josericodata.github.io/index.html">
-    <meta name="description" content="Welcome to my data analyst portfolio, here I show my skills, my interests and by the design of the website you will get to know me">
-    <meta name="keywords" content="Portfolio, data, analyst, data analyst, business, intelligence, business intelligence, BI, storyteller, Power BI, MySQL, SQL, R, Python, Tableau, Alteryx, Dublin, Ireland, CV, job, job seeking, ML, Machine Learning, Jose Maria Rico Leal, Spanish, Matplotlib, Statistics, Deep Learning">
+    <meta name="description" content="Welcome to my data analyst portfolio, showcasing my skills, projects, and experience in data analytics.">
+    <meta name="keywords" content="Portfolio, data analyst, business intelligence, Power BI, SQL, Python, Tableau, Dublin, CV, job seeking, ML, Jose Maria Rico Leal">
     <meta name="og:title" property="og:title" content="Data Analyst Portfolio">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #1e1e1e;
-            color: #dcdcdc;
-        }
-        header {
-            background: #3c3c3c;
-            color: #dcdcdc;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        .section {
-            padding: 2rem 0;
-        }
-        .skills, .projects {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .card {
-            margin: 1rem 0;
-            background: #2d2d2d;
-            border: 1px solid #4d4d4d;
-        }
-        .card-body {
-            color: #dcdcdc;
-        }
-        footer {
-            background: #3c3c3c;
-            color: #dcdcdc;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-		.footer-content {
-		display: flex;
-		justify-content: space-around;
-		align-items: flex-start;
-		flex-wrap: wrap;
-		gap: 20px;
-		}
-
-		.footer-section {
-			flex: 1;
-			min-width: 200px;
-			text-align: center;
-		}
-
-		.footer-section h3 {
-			margin-bottom: 8px;
-			font-size: 1.1em;
-		}
-
-		.contact-pair {
-			display: flex;
-			justify-content: space-around;
-			margin-bottom: 10px;
-		}
-
-		.contact-pair p {
-			margin: 0;
-			display: flex;
-			align-items: center;
-		}
-
-		.contact-pair i {
-			margin-right: 5px;
-			color: #007bff;
-		}
-
-		.footer-section a {
-			color: #007bff;
-			text-decoration: none;
-		}
-
-		.footer-section a:hover {
-			color: #0056b3;
-		}
-
-		.footer-bottom {
-			margin-top: 20px;
-			font-size: 0.9em;
-			color: #6c757d;
-		}
-        .contact a {
-            color: #61dafb;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        .section h2, .card-title {
-            font-family: 'Courier New', Courier, monospace;
-        }
-		p {
-            font-size: 1.3rem; /* Increase this value as needed */
-        }
-		
-		.video-container {
-		  position: relative;
-		  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-		  height: 0;
-		  overflow: hidden;
-		  max-width: 100%; /* Ensures the container doesn't exceed the screen width */
-		}
-
-		.video-container iframe {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		}
-
-
-    </style>
+    <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>Jose Rico</h1>
-        <p>Pricing Analyst | MSc Data Analytics</p>
-    </header>
+        <div class="header-container">
+            <div class="header-left">
+                <h1>Jose Rico</h1>
+                <p>Data Analyst | MSc Data Analytics</p>
+            </div>
+            <div class="header-right">
+                <a href="assets/CV/Jose_Rico_CV.pdf" target="_blank" class="cv-link">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </header>    
     <div class="container">
         <section class="section introduction">
             <h2 class="text-center">About Me</h2>
@@ -160,258 +47,166 @@
                 </div>
                 <div class="col-md-8">
                     <p class="text-justify">
-						Hello! I’m Jose, a Spaniard who has been living in Ireland for six years. Currently, I work as a Pricing Analyst at Cardinal Health, supporting commercial teams with data migration and visualization, ensuring accurate data flow between Salesforce and SAP.
+						Hello! Thank you for visiting my portfolio. I like to tinker with data in all its shapes and forms.
+                        Currently, I work as a Pricing Analyst for Cardinal Health here in Dublin, Ireland. My role is to act as 
+                        a bridge between IT and several stakeholders, ensuring that all data is accurate within our systems and 
+                        does not negatively impact the business's financial health. To complement my job, I recently 
+                        <a href="assets/transcript/Transcript_MSc_Data_Analytics_sba23021.pdf" target="_blank">graduated</a> 
+                        with an <strong>MSc in Data Analytics</strong> from CCT College, Dublin. Finally, to continue developing 
+                        my skillset, I am creating applications and deploying them with <a href="https://share.streamlit.io/user/josericodata" target="_blank">Streamlit</a>.
+                        The data analytics field is never boring!
 					</p>
-					<p class="text-justify">
-						I recently graduated with a Master of Science in Data Analytics from CCT College, Dublin, where I developed skills in <strong>Machine Learning</strong>, <strong>Data Preparation & Visualisation</strong>, and <strong>Big Data Processing</strong>. My <strong>final project</strong> focused on building a Federated Learning (FL) server to simulate real-world decentralized model training, enhancing model accuracy for various scenarios.
-					</p>
-					<p class="text-justify">
-						This experience gave me hands-on expertise in advanced data systems, and I’m passionate about leveraging data to drive impactful business solutions. I’m excited to take on new challenges as I continue my journey in data analytics.
-					</p>
                 </div>
             </div>
         </section>
-        <section class="section experience">
-            <h2 class="text-center">Experience</h2>
+        <section class="section streamlit">
+            <h2 class="text-center">Streamlit Apps</h2>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h3 class="card-title">Senior Pricing Analyst at Cardinal Health</h3>
-                            <p class="card-text">Apr. 2020 - Present</p>
-                            <p class="card-text text-justify">Creating and automating reports through SQL and Python based on stakeholders' requirements. Building dashboards in Power BI to drive insights regarding KPIs. Maintaining offers and tenders prices in SAP, ensuring accurate uploads to avoid future price discrepancies. Investigating customer price discrepancies and implementing preventive measures to enhance the company's financial health. Collaborating with the analytics team to design, develop, and deploy powerful business metrics and reporting.</p>
+                            <h3 class="card-title">Dublin Bus App</h3>
+                            <p class="card-text text-justify">
+                                The app processes real-time API data to track live Dublin bus locations,
+                                parsing <strong>JSON</strong> responses to extract relevant details such as bus positions,
+                                routes, and calculating estimated arrival times. 
+                            </p>
+                            <div class="mt-3">
+                                <h4>Demo:</h4>
+                                <img src="assets/gifs/BusLocator.gif" alt="Dublin Bus App Demo" class="img-fluid">
+                            </div>
+                            <div class="mt-3">
+                                <h4>Live app:</h4>
+                                <a href="https://dublinbusapp.streamlit.app/" target="_blank">
+                                    <img src="assets/img/streamlit-seeklogo.svg" alt="Streamlit App" style="width: 120px; height: auto;">
+                                </a>  
+                            </div>                      
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h3 class="card-title">Community Operations Analyst at Facebook by CPL</h3>
-                            <p class="card-text">Jan. 2019 - Mar. 2020</p>
-                            <p class="card-text text-justify">Identifying and escalating cases regarding safety according to Facebook policies. Enforcing and improving Facebook policies by working closely with the global policy team. Monitoring trends and rating performance across Spanish communities, researching and troubleshooting variations in performance.</p>
+                            <h3 class="card-title">Flight Tracking App</h3>
+                            <p class="card-text text-justify">
+                                The app retrieves real-time flight data using the <strong>OpenSky API</strong>,
+                                providing live updates on flight states, including latitude, longitude, altitude, and callsigns.
+                                It processes this data dynamically, filtering flights by airline and location, and integrates <strong>OurAirports</strong>
+                                and <strong>OpenFlights</strong> datasets to compute nearest airports and enrich flight details for visualisation. 
+                            </p>
+                            <div class="mt-3">
+                                <h4>Demo:</h4>
+                                <img src="assets/gifs/flights.gif" alt="Flight Tracking App" class="img-fluid">
+                            </div>
+                            <div class="mt-3">
+                                <h4>Live app:</h4>
+                                <a href="https://flighttrackingapp.streamlit.app/" target="_blank">
+                                    <img src="assets/img/streamlit-seeklogo.svg" alt="Streamlit App" style="width: 120px; height: auto;">
+                                </a>  
+                            </div>                      
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h3 class="card-title">Claims Manager at Puertas Castalla, S.L.</h3>
-                            <p class="card-text">Mar. 2017 - Oct. 2018</p>
-                            <p class="card-text text-justify">Managing fraud prevention related to inappropriate brand use. Analyzing performance data to enhance productivity and quality ratios, considering customer feedback. Developing and implementing quality product standards to meet ISO 9001:2015 quality standards and ISO 14001:2015 environmental requirements.</p>
+                            <h3 class="card-title">SP500 Forecaster</h3>
+                            <p class="card-text text-justify">
+                                This app leverages <strong>Machine Learning</strong> for stock prediction using historical financial data from
+                                <strong>S&P 500</strong> stocks. It retrieves stock price data via the Yahoo <strong>Finance API (YFinance)</strong>
+                                and applies <strong>AutoReg (Auto Regressive)</strong> modeling from the <strong>Statsmodels</strong>
+                                 library to generate predictions for up to 180 days.  
+                            </p>
+                            <div class="mt-3">
+                                <h4>Demo:</h4>
+                                <img src="assets/gifs/sp500forecaster.gif" alt="SP500 Forecaster App Demo" class="img-fluid">
+                            </div>
+                            <div class="mt-3">
+                                <h4>Live app:</h4>
+                                <a href="https://sp500forecaster.streamlit.app/" target="_blank">
+                                    <img src="assets/img/streamlit-seeklogo.svg" alt="Streamlit App" style="width: 120px; height: auto;">
+                                </a>  
+                            </div>                      
                         </div>
                     </div>
-                </div>
-				<div class="col-md-12">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h3 class="card-title">Account Manager at Puertas Castalla, S.L.</h3>
-                            <p class="card-text">Oct. 2014 - Nov. 2016</p>
-                            <p class="card-text text-justify">Managed orders, stock, and inventory while maintaining strong customer relationships. Oversaw a portfolio of nearly 200 client accounts, acting as the primary liaison between the consumer and the corporation.</p>
+                            <h3 class="card-title">Crypto Predictor</h3>
+                            <p class="card-text text-justify">
+                                <strong>CryptoPredictor</strong> is a <strong>Machine Learning-Powered</strong> app that forecasts cryptocurrency prices using historical data. 
+                                It integrates real-time data from the <strong>Yahoo Finance API</strong> and <strong>CoinGecko API</strong> 
+                                for up-to-date cryptocurrency market insights. The app employs a <strong>Long Short-Term Memory (LSTM)</strong>
+                                neural network, optimised for time-series predictions, to analyse historical trends and generate price forecasts for the next 1–90 days.
+                            </p>
+                            <div class="mt-3">
+                                <h4>Demo:</h4>
+                                <img src="assets/gifs/crypto.gif" alt="Crypto Predictor Demo" class="img-fluid">
+                            </div>
+                            <div class="mt-3">
+                                <h4>Live app:</h4>
+                                <a href="https://cryptopredictorpro.streamlit.app/" target="_blank">
+                                    <img src="assets/img/streamlit-seeklogo.svg" alt="Streamlit App" style="width: 120px; height: auto;">
+                                </a>  
+                            </div>                      
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Statistics App</h3>
+                            <p class="card-text text-justify">
+                                This app is an interactive app for numerical analysis and statistical testing, 
+                                supporting normality checks, p-value calculations, and confidence intervals.
+                                It utilises <strong>NumPy</strong> for computations, <strong>SciPy</strong> for statistical tests, 
+                                <strong>Pandas</strong> for data handling, and <strong>Matplotlib</strong> for visualising results.
+                            </p>
+                            <div class="mt-3">
+                                <h4>Demo:</h4>
+                                <img src="assets/gifs/SignificanceLevelCalculator.gif" alt="Statistics App Demo" class="img-fluid">
+                            </div>
+                            <div class="mt-3">
+                                <h4>Live app:</h4>
+                                <a href="https://statisticsapp.streamlit.app/" target="_blank">
+                                    <img src="assets/img/streamlit-seeklogo.svg" alt="Streamlit App" style="width: 120px; height: auto;">
+                                </a>  
+                            </div>                      
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section education">
-            <h2 class="text-center">Education</h2>
-            <div class="row">
-				<div class="col-md-12">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Master of Science in Data Analytics</h3>
-                            <p class="card-text">CCT College, Sept. 2023 - Oct. 2024</p>                          
-							<p class="card-text">Grade: 6.2 (Second-Class Honours)</p>                        
-							<p class="card-text">Level 9 National Framework of Qualification (NFQ)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Higher Diploma in Science in Computing - Software Development</h3>
-                            <p class="card-text">Dublin Business School, Sept. 2020 - Sept. 2022</p>
-							<p class="card-text">Grade: 7.3 (First-Class Honours)</p>     
-                            <p class="card-text">Level 8 National Framework of Qualification (NFQ)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Diploma in Big Data for Business</h3>
-                            <p class="card-text">Dublin Business School, Sept. 2019 - May 2020</p>
-                            <p class="card-text">Level 7 National Framework of Qualification (NFQ)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Bachelor’s Degree in Business & Management</h3>
-                            <p class="card-text">University of Alicante, Sept. 2010 - Jun. 2016</p>
-                            <p class="card-text">Level 6 European Qualification Framework (EQF)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section skills">
-            <h2 class="text-center">Skills</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-code fa-3x"></i>
-                            <h3 class="card-title mt-3">Programming Languages</h3>
-                            <p class="card-text">Python, R, C#, JavaScript</p>
-                        </div>
-                    </div>
-                </div>
-				<div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-file-code fa-3x"></i>
-                            <h3 class="card-title mt-3">Other Languages</h3>
-                            <p class="card-text">SQL, HTML, CSS, LaTeX</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-tools fa-3x"></i>
-                            <h3 class="card-title mt-3">Tools</h3>
-                            <p class="card-text">Tableau, Power BI, Linux</p>
-                        </div>
-                    </div>
-                </div>
-				<div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-cogs fa-3x"></i>
-                            <h3 class="card-title mt-3">ERP's</h3>
-                            <p class="card-text">SAP & Salesforce</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-chart-line fa-3x"></i>
-                            <h3 class="fas fa-robot fa-3x">ML</h3>
-                            <p class="card-text">K-Means, GridSearch, NN's, CNN's</p>
-                        </div>
-                    </div>
-                </div>
-				<div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-chart-line fa-3x"></i>
-                            <h3 class="card-title mt-3">Big Data</h3>
-                            <p class="card-text">Hadoop, Spark, MapReduce, Hive, Cassandra, MongoDB</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-		<section class="section projects">
-            <h2 class="text-center">MSc Assignments</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Semester One CA1</h3>
-                            <p class="card-text text-left">Recent Demographic History in the Republic of Ireland.</p>
-							<a href="https://github.com/josericodata/MScDataAnalyticsFirstSemesterAssignmentOne.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Semester One CA2</h3>
-                            <p class="card-text text-left">Analysis of the Irish Transport Sector: A Comparative Study with EU Countries.</p>
-							<a href="https://github.com/josericodata/MScDataAnalyticsFirstSemesterAssignmentTwo.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Semester Two CA1</h3>
-                            <p class="card-text text-left">Storage Solutions and Data Analytics: RDBMS, Hadoop and APIs in Neural Networks Contexts.</p>
-							<a href="https://github.com/josericodata/MScDataAnalyticsSecondSemesterAssignmentOne.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-				<div class="col-md-3">
-                    <div class="card text-center">
-                        <div class="card-body">						
-                            <h3 class="card-title">Semester Two CA2</h3>
-                            <p class="card-text text-left">Big Data Storage, Processing, and Advanced Data Analytics for Twitter Data.</p>
-							<a href="https://github.com/josericodata/MScDataAnalyticsSecondSemesterAssignmentTwo.git" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-		
+        </section>        	
 		<h2 class="text-center">MSc Capstone Project</h2>
 			<div class="col-md-12">
                     <div class="card text-center">
                         <div class="card-body">
 							<h3 class="card-title">Federated Learning: Evaluating Popular Frameworks and Developing a Cross-Client Horizontal Server</h3>
-                            <p class="card-text text-justify">This project investigates Federated Learning (FL), a decentralized machine learning approach that enhances data privacy. It evaluates five popular FL frameworks and develops a cross-client horizontal FL server for both technological and medical scenarios using IID and non-IID data. The findings reveal improved model accuracy in the technological scenario but a slight decline in the medical scenario. The research highlights the potential of FL while identifying limitations and areas for future improvement in server infrastructure and privacy concerns.</p>
-							<a href="https://github.com/JoseRicoCct/Capstone_MScData_Sept23_SB" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                            <p class="card-text text-justify">This project investigates Federated Learning (FL), a decentralised machine learning approach that enhances data privacy. It evaluates five popular FL frameworks and develops a cross-client horizontal FL server for both technological and medical scenarios using IID and non-IID data. The findings reveal improved model accuracy in the technological scenario but a slight decline in the medical scenario. The research highlights the potential of FL while identifying limitations and areas for future improvement in server infrastructure and privacy concerns.</p>
 							<div class="video-container">
 							 <iframe width="860" height="615" src="https://www.youtube.com/embed/vErRPw0Rasw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</div>
+							</div><br>
+                            <h4>GitHub repo:</h4>
+							<a href="https://github.com/JoseRicoCct/Capstone_MScData_Sept23_SB" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
 						</div>
                     </div>
 					
             </div> 
         </section>
-		
     </div>
 	<footer>
 		<div class="footer-content">
-			
-
 			<!-- Contact Section -->
 			<div class="footer-section">
-				<h3>Contact</h3>
-				<div class="contact-pair">
-					<p><i class="fas fa-phone"></i> <a href="tel:+353894520767">+353 89 456 0767</a></p>
-					<p><i class="fas fa-envelope"></i> <a href="mailto:maninastre@gmail.com">Email Me</a></p>
-				</div>
-				<div class="contact-pair">
-					<p><i class="fab fa-github"></i> <a href="https://github.com/josericodata" target="_blank">GitHub</a></p>
-					<p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/josericodata/" target="_blank">LinkedIn</a></p>
-				</div>
 			</div>
 			<!-- Curriculum Vitae Section -->
 			<div class="footer-section">
-				<h3>Curriculum Vitae</h3>
-				<a href="assets/CV/Jose_Rico_CV.pdf" target="_blank">
-					<i class="fas fa-download"></i> Download CV
-				</a>
+				<h4>Contact</h4>
+				<p><i class="fab fa-github"></i> <a href="https://github.com/josericodata" target="_blank">GitHub</a></p>
+				<p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/josericodata/" target="_blank">LinkedIn</a></p>
 			</div>
 			<!-- Curriculum Vitae Section -->
 			<div class="footer-section">
-				<h3>MSc Transcript</h3>
-				<a href="assets/transcript/Transcript_MSc_Data_Analytics_sba23021.pdf"  target="_blank">
-					<i class="fas fa-download"></i> Download MSc Transcript
-				</a>
 			</div>
 		</div>
-		
-
 		<!-- Copyright Section -->
 		<div class="footer-bottom">
 			<p>&copy; <span id="current-year"></span> Jose Rico.</p>
 		</div>
 	</footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
