@@ -115,8 +115,10 @@ footer {
     }
 }
 
-.icon-streamlit-seeklogo {
-    font-size: 24px; /* Adjust to match Font Awesome icons */
+.icon-download:before {
+    content: "\e900";  /* Unicode from IcoMoon */
+    color: #dcdcdc;  /* Matches other icons */
+    font-size: 24px;  /* Adjust to match Font Awesome */
     vertical-align: middle;
     margin-right: 8px;
 }
