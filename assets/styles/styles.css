@@ -115,10 +115,8 @@ footer {
     }
 }
 
-.streamlit-logo {
-    width: 20px;  /* Match Font Awesome icon size */
-    height: auto;
+.icon-streamlit-seeklogo {
+    font-size: 24px; /* Adjust to match Font Awesome icons */
     vertical-align: middle;
     margin-right: 8px;
-    display: inline-block;
 }
