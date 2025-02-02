@@ -116,8 +116,9 @@ footer {
 }
 
 .streamlit-logo {
-    width: 24px;  /* Matches Font Awesome icons */
+    width: 20px;  /* Match Font Awesome icon size */
     height: auto;
     vertical-align: middle;
     margin-right: 8px;
+    display: inline-block;
 }
