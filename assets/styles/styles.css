@@ -1,31 +1,43 @@
-body {
+/* ==========================
+   General Styles
+   ========================== */
+   body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #1e1e1e;
     color: #dcdcdc;
 }
 
+/* ==========================
+   Header
+   ========================== */
 header {
     background: #3c3c3c;
     color: #dcdcdc;
     padding: 2rem 0;
+    text-align: center;
 }
 
 .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .header-left {
-    margin-bottom: 10px;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .header-right {
-    margin-top: 10px;
+    flex-shrink: 0;
 }
 
+/* ==========================
+   CV Button
+   ========================== */
 .cv-link {
     background-color: #555;
     color: white;
@@ -33,12 +45,20 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.cv-link:hover {
+.cv-link:hover,
+.cv-link:focus {
     background-color: #777;
+    color: yellow !important;
 }
 
+/* ==========================
+   Sections & Cards
+   ========================== */
 .section {
     padding: 2rem 0;
 }
@@ -50,6 +70,9 @@ header {
     color: #dcdcdc;
 }
 
+/* ==========================
+   Footer
+   ========================== */
 footer {
     background: #3c3c3c;
     color: #dcdcdc;
@@ -63,8 +86,6 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 100%;
-    overflow: hidden;
 }
 
 .footer-section {
@@ -77,12 +98,22 @@ footer {
 .footer-section a {
     color: #bbb;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.footer-section a:hover {
-    color: #ddd;
+/* ==========================
+   Footer Hover Effects
+   ========================== */
+.footer-section a:hover,
+.footer-section a:focus,
+.footer-section a:hover i,
+.footer-section a:focus i {
+    color: yellow !important;
 }
 
+/* ==========================
+   Video Container
+   ========================== */
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -99,38 +130,72 @@ footer {
     height: 100%;
 }
 
+/* ==========================
+   Icons & Logos
+   ========================== */
 .fab.fa-github {
     color: #dcdcdc !important;
 }
 
+.fab.fa-github:hover {
+    color: yellow !important;
+    transition: color 0.3s ease-in-out;
+}
+
 .streamlit-logo {
-    width: 80px;  /* Adjust size for desktop */
+    width: 80px;
     height: auto;
     max-width: 100%;
 }
 
-@media (max-width: 768px) {
-    .streamlit-logo {
-        width: 50px; /* Smaller size for mobile */
-    }
+.streamlit-logo:hover {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(93%) saturate(319%) hue-rotate(5deg) brightness(108%) contrast(103%);
+    transition: filter 0.3s ease-in-out;
 }
 
-.icon-footerStreamlit:before {
-    font-family: 'icomoon' !important; /* Ensure it uses the correct font */
-    content: "\e900"; /* Unicode from IcoMoon */
-    font-size: 18px; /* Adjust size to match other icons */
-    color: #dcdcdc; /* Match Font Awesome icon color */
+.footer-icon {
+    width: 24px;
+    height: auto;
     vertical-align: middle;
     margin-right: 8px;
-    display: inline-block;
 }
 
-@font-face {
-    font-family: 'icomoon';
-    src: url('assets/fonts/icomoon/icomoon.eot'); /* IE9 Compat Modes */
-    src: url('assets/fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/icomoon/icomoon.woff') format('woff'),
-         url('assets/fonts/icomoon/icomoon.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+/* ==========================
+   Responsive Fixes
+   ========================== */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    .cv-link {
+        display: block;
+        width: max-content;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .streamlit-logo {
+        width: 50px;
+    } 
+  
+}
+
+/* ==========================
+   Links (About Me Section)
+   ========================== */
+.col-md-8 p a {
+    color: yellow !important;
+    text-decoration: none;
+}
+
+.col-md-8 p a:hover,
+.col-md-8 p a:focus {
+    color: #FFD700 !important; /* Slightly brighter yellow on hover */
+    text-decoration: underline;
 }
