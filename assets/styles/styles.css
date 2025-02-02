@@ -114,3 +114,10 @@ footer {
         width: 50px; /* Smaller size for mobile */
     }
 }
+
+.streamlit-logo {
+    width: 24px;  /* Matches Font Awesome icons */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
