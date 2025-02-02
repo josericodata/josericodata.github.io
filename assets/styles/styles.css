@@ -124,3 +124,12 @@ footer {
     margin-right: 8px;
     display: inline-block;
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('assets/fonts/icomoon/icomoon.woff2') format('woff2'),
+         url('assets/fonts/icomoon/icomoon.woff') format('woff'),
+         url('assets/fonts/icomoon/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
