@@ -115,11 +115,10 @@ footer {
     }
 }
 
-.icon-download:before {
-    content: "\e900";  /* Unicode from IcoMoon */
-    font-family: "icomoon"; /* Must match your font name */
-    color: #dcdcdc;  /* Matches other icons */
-    font-size: 24px;  /* Adjust to match Font Awesome */
+.streamlit-logo {
+    width: 20px;  /* Match Font Awesome icon size */
+    height: auto;
     vertical-align: middle;
     margin-right: 8px;
+    display: inline-block;
 }
