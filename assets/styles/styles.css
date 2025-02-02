@@ -115,11 +115,12 @@ footer {
     }
 }
 
-.streamlit-logo {
-    width: 18px;  /* Reduce width to match icons */
-    height: 18px; /* Ensure proportional scaling */
+.icon-footerStreamlit:before {
+    font-family: 'icomoon' !important; /* Ensure it uses the correct font */
+    content: "\e900"; /* Unicode from IcoMoon */
+    font-size: 18px; /* Adjust size to match other icons */
+    color: #dcdcdc; /* Match Font Awesome icon color */
     vertical-align: middle;
     margin-right: 8px;
     display: inline-block;
-    object-fit: contain; /* Ensures proper scaling */
 }
