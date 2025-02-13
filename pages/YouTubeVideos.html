@@ -1,0 +1,190 @@
+<!-- Autor: Jose Maria Rico Leal -->
+<!-- Project: Data Analyst Portfolio Web Design -->
+<!-- Date: 04/07/2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Rico Portfolio | YouTube Videos</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-18B7811ES3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-18B7811ES3');
+    </script>
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="mH8Z2zrOpw1mYTgLbcBfz2-kqumCG0uYSO2rDq7_Dtg" />
+
+    <!-- SEO and Open Graph Meta Tags -->
+    <meta name="description" content="I am creating tutorials on YouTube that may help someone out there, also while doing this I am expanding my knowledge in Data Analytics.">
+    <meta property="og:title" content="YouTube Videos - Data Science">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://josericodata.github.io/pages/YouTubeVideos.html">
+    <meta property="og:description" content="I am creating tutorials on YouTube about Data Science, Streamlit, and Machine Learning.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://josericodata.github.io/pages/YouTubeVideos.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <h1>Jose Rico</h1>
+                <p>Data Analyst | MSc Data Analytics</p>
+            </div>
+            <div class="header-right">
+                <a href="../index.html" target="_blank" class="cv-link">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="../assets/CV/Jose_Rico_CV.pdf" target="_blank" class="cv-link">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="section introduction">
+        <h2 class="text-center">Motivation</h2>
+        <div class="container">
+            <p class="card-text text-justify">
+                The motivation behind this set of YouTube videos is to showcase the applications I’ve been developing.
+                I find <strong>Streamlit</strong> functionalities fascinating, and on top of that, it’s free. In these videos,
+                I will demonstrate how to parse <strong>JSON</strong> APIs and visualise the data using <strong>Folium</strong>,
+                as well as how to model time series data with neural networks, such as <strong>AutoReg</strong> for stocks and <strong>LSTM</strong> for cryptocurrencies.
+                Hopefully, these tutorials will inspire like-minded individuals and spark new ideas!
+            </p>      
+        </div>
+    </section>      
+    <div class="container">
+        <h2 class="text-center">Streamlit Tutorial</h2>
+        <div class="col-md-12">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title">How to Deploy a Streamlit App</h3>
+                    <p class="card-text text-justify">Learn how to <strong>deploy your Streamlit app</strong> in minutes! This step-by-step tutorial covers <strong>GitHub repository setup</strong>,
+                    <strong>Streamlit Cloud deployment</strong>, and <strong>running apps locally</strong>. Perfect for <strong>data scientists, Python developers, and ML enthusiasts</strong>
+                    looking to build and share <strong>interactive web apps</strong> easily!</p>  
+
+                    <div class="video-container">
+                        <iframe width="860" height="615" src="https://www.youtube.com/embed/6fTxRzDErbc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><br>
+                    <h4>GitHub repo:</h4>
+                    <a href="https://github.com/josericodata/StreamlitTutorialDeployment" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Streamlit Crypto Predictor App</h2>
+        <div class="col-md-12">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title">Building a Crypto Predictor in 3 Minutes</h3>
+                    <p class="card-text text-justify">Predict <strong>cryptocurrency prices</strong> with <strong>machine learning</strong>! CryptoPredictor uses <strong>LSTM neural networks</strong>,
+                    <strong>Yahoo Finance API</strong>, and <strong>CoinGecko API</strong> to provide <strong>real-time data</strong> and <strong>interactive charts</strong>. The app was developed on <strong>Ubuntu using python
+                    </strong> and deployed on <strong>Streamlit</strong>!</p>
+                    <div class="video-container">
+                        <iframe width="860" height="615" src="https://www.youtube.com/embed/MiynYffJWtM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><br>
+                    <h4>GitHub repo:</h4>
+                    <a href="https://github.com/josericodata/CryptoPredictor" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Streamlit Stock Predictor App</h2>
+        <div class="col-md-12">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title">Standard & Poor's 500® Stock Predictor</h3>
+                    <p class="card-text text-justify">Predict <strong>S&P 500 stock prices</strong> with <strong>machine learning</strong>.
+                    SP500Forecaster leverages <strong>historical stock data</strong>, <strong>Yahoo Finance API</strong>, and <strong>AutoReg models</strong>
+                    to generate <strong>real-time forecasts</strong>. It offers <strong>trend analysis, predictive modeling, and market insights</strong> based on historical data.</p>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aRFjkMZeKhc?si=0z0hRWjZ_CotOTiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div><br>
+                    <h4>GitHub repo:</h4>
+                    <a href="https://github.com/josericodata/SP500Forecaster" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Streamlit Statistics Calculator App</h2>
+        <div class="col-md-12">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title">Statistics Calculator: Data Analysis & Statistical Testing</h3>
+                    <p class="card-text text-justify">Perform key <strong>statistical tests</strong> with <strong>Python</strong> and <strong>Streamlit</strong>.
+                    The app enables <strong>normality checks, confidence interval calculations, and significance testing</strong>, leveraging <strong>NumPy, SciPy, Matplotlib, and Pandas</strong> for data analysis and visualisation.</p>
+
+                    <div class="video-container">
+                        <iframe width="860" height="615" src="https://www.youtube.com/embed/6fTxRzDErbc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><br>
+                    <h4>GitHub repo:</h4>
+                    <a href="https://github.com/josericodata/StatisticsApp" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Streamlit Dublin Bus App</h2>
+        <div class="col-md-12">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title">Dublin Bus App: Real-Time Bus Tracking</h3>
+                    <p class="card-text text-justify">Track <strong>Dublin Bus</strong> arrivals and live locations using real-time data from the <strong>National Transport Authority APIs</strong>.
+                    The app provides up-to-date bus stop times and route-based vehicle tracking, ensuring efficient trip planning.</p>
+                    <div class="video-container">
+                        <iframe width="860" height="615" src="https://www.youtube.com/embed/6fTxRzDErbc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><br>
+                    <h4>GitHub repo:</h4>
+                    <a href="https://github.com/josericodata/DublinBusApp" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Streamlit Flight Tracking App</h2>
+        <div class="col-md-12">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title">Flight Tracking App: Live Flight Visualisation</h3>
+                    <p class="card-text text-justify">Monitor real-time flights with <strong>OpenSky API</strong>
+                    and visualise aircraft positions on an interactive <strong>Folium</strong> map. This app offers live tracking,
+                    airline filtering, and airport proximity data for exploring global air traffic.</p>
+                    <div class="video-container">
+                        <iframe width="860" height="615" src="https://www.youtube.com/embed/6fTxRzDErbc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><br>
+                    <h4>GitHub repo:</h4>
+                    <a href="https://github.com/josericodata/FlightTrackingApp" target="_blank"><i class="fab fa-github fa-3x"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/josericodata" target="_blank">GitHub</a></p>
+                <p><i class="fab fa-youtube"></i> <a href="https://www.youtube.com/@josericodata" target="_blank">YouTube</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/josericodata/" target="_blank">LinkedIn</a></p>
+                <p><img src="../assets/img/footerStreamlit.svg" alt="Streamlit" class="footer-icon"><a href="https://share.streamlit.io/user/josericodata" target="_blank">Streamlit</a></p>
+            </div>
+        </div>
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Jose Rico.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
